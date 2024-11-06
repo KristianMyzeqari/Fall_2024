@@ -1,0 +1,80 @@
+CHARTER
+-----------------------------------------------
+Identify capabilities and areas of potential instability of Freemind.
+Exercise each capability identified with data typical to the intended use of the application.
+The intended use of the application is to enable testers to take testing notes using a Mind Map.
+
+Build
+-----------------------------------------------
+Release Download Version - 1.0.1 - SourceForge.Net
+
+Area
+-----------------------------------------------
+Typical Scenarios - Main functions and capabilites
+
+Environment
+-----------------------------------------------
+Windows 11
+
+START
+-----------------------------------------------
+12:58 PM 09/22/2024
+
+
+TESTER
+-----------------------------------------------
+Kristian Myzeqari
+
+
+Capabilities Explored and Findings:
+--------------------------------------
+1. Mind Map Creation and Node Management
+Action: Created a complex mind map with over 50 nodes, including nested child nodes up to 4 levels deep.
+Observation: The basic creation and management of nodes were stable. However, navigating between deeply nested nodes sometimes caused noticeable lag, especially when expanding or collapsing large branches.
+Potential Instability: Performance degradation when dealing with highly nested nodes.
+
+2. Linking Capabilities (URLs, Files, and Node Links)
+Action: Added links to external websites, linked local documents (PDFs, images), and created links between nodes within the mind map.
+Observation: All link types functioned as expected, opening files and URLs without issues. However, linking between nodes occasionally failed to maintain the correct target, particularly after rearranging nodes.
+Potential Instability: Internal node links can break or misalign when nodes are moved.
+
+3. Node Customization (Styling, Icons, Colors)
+Action: Applied various styles to nodes, including font changes, color adjustments, and adding icons.
+Observation: Styling was smooth and intuitive, but applying multiple styles (color, font, and icons) at once occasionally caused the application to freeze temporarily.
+Potential Instability: Temporary freezing when combining multiple customizations rapidly.
+
+4. Export and Import Functions
+Action: Exported the mind map to HTML, PDF, and PNG formats. Imported existing mind maps created in earlier versions of FreeMind.
+Observation: Exporting was mostly reliable, but larger maps resulted in slow export times, especially for PDFs. Some formatting inconsistencies were noticed when re-importing older maps, such as missing icons or altered styles.
+Potential Instability: Slow performance and formatting issues during export and import of complex or older maps.
+
+5. Search and Replace Functionality
+Action: Used the search feature to find nodes by text and replace node content.
+Observation: Search worked effectively in smaller maps, but on larger maps with 100+ nodes, search results lagged, and the replace function occasionally skipped nodes.
+Potential Instability: Search and replace slow down significantly in large maps, leading to missed replacements.
+
+6. Undo/Redo Stability
+Action: Performed a sequence of actions (add, move, delete, style changes) and used undo/redo repeatedly.
+Observation: Basic undo and redo actions worked, but complex sequences involving node movements and style changes sometimes led to unexpected results, such as incorrect node positions or partial undo of styles.
+Potential Instability: Undo/redo behavior becomes unpredictable after complex sequences of edits.
+
+7. Large Map Handling and Performance Testing
+Action: Created a map with over 200 nodes, including extensive branching and cross-links between nodes.
+Observation: Performance degraded significantly, with noticeable lag during node creation, movement, and expansion of branches. The application occasionally became unresponsive, requiring a restart.
+Potential Instability: Severe performance issues and risk of freezing with very large maps.
+
+Summary of Capabilities and Potential Instabilities:
+1-Node Management Stability: Basic node functions are stable but degrade in performance with deep nesting.
+2-Linking Capabilities: Stable for basic links; internal node links can misalign when nodes are moved.
+3-Customization Instabilities: Combining multiple styling actions can cause temporary freezes.
+4-Export/Import Issues: Larger exports are slow; re-importing older maps may alter formatting.
+5-Search and Replace Performance: Slow and inconsistent results with large maps.
+6-Undo/Redo Issues: Becomes unreliable during complex sequences involving multiple actions.
+7-Large Map Handling: Major performance and stability issues when handling maps with a high number of nodes.
+
+Recommendations for Improvement
+1-Optimize Performance: Enhance handling of large and deeply nested maps to reduce lag and freezing.
+2-Improve Link Stability: Ensure internal node links remain consistent after node movements.
+3-Enhance Undo/Redo Logic: Make redo operations more predictable, especially after multiple edits.
+4-Refine Export/Import Process: Address formatting and speed issues in exports, especially for complex or legacy maps.
+
