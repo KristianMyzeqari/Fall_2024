@@ -1,0 +1,12 @@
+start node: ST
+end node: END
+number of nodes: 11
+
+Number of basis paths: 4
+
+Basis paths:
+
+ST,A,B,C,D,E,G,I,END
+ST,A,B,C,E,F,G,I,END
+ST,A,B,C,E,G,H,I,END
+ST,A,B,C,E,G,I,END

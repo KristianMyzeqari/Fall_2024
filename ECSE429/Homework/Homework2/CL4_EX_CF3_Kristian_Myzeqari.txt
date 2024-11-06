@@ -1,0 +1,13 @@
+start node: ST
+end node: END
+number of nodes: 25
+
+number of basis paths: 6
+
+Basis paths:
+ST,A,B,C,D,Q,R,END
+ST,A,B,C,D,E,X,END
+ST,A,B,C,D,E,F,G,H,W,O,END
+ST,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,END
+ST,A,B,C,D,E,F,G,H,I,J,S,T,U,V,O,END
+ST,A,B,C,D,E,F,G,H,I,S,T,U,V,O,END
